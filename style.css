@@ -1,0 +1,61 @@
+/* Selector universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Selector universa; */
+body{
+    
+    background-image : url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+h1{text-align: center;
+}
+p{
+   color: rgb(255, 255, 255); align-items: normal; text-align: justify;
+}
+
+section {
+    display: flex;
+    width: 600;
+    height: 430;
+}
+section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover {
+    cursor: normal;
+    width: 300;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.menu {
+    margin: 5px;
+    overflow: none;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+.menu ul li {
+    float: left;
+}
+.menu ul li a{
+    display: block;
+    color: azure;
+    text-decoration: cornflowerblue;
+    text-align: center;
+    padding: 14px 20px;
+    display: flex;
+}
